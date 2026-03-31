@@ -1,0 +1,120 @@
+/* ===== PAGE BACKGROUND ===== */
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+
+  background: linear-gradient(135deg, #fff1f5, #ffe4ec);
+}
+
+/* ===== FORM CONTAINER ===== */
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 35px 30px;
+
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+
+  border-radius: 25px;
+  text-align: center;
+
+  box-shadow:
+    0 12px 35px rgba(255, 65, 108, 0.25),
+    0 0 40px rgba(178, 69, 146, 0.2);
+}
+
+/* ===== TITLE ===== */
+.container h2 {
+  margin-bottom: 28px;
+  font-size: 30px;
+  font-weight: 800;
+
+  background: linear-gradient(
+    90deg,
+    #ff416c,
+    #ff4b2b,
+    #b24592
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 4px 15px rgba(178, 69, 146, 0.4);
+}
+
+/* ===== INPUT ===== */
+.container input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+
+  border-radius: 14px;
+  border: 2px solid rgba(255, 65, 108, 0.6);
+
+  font-size: 15px;
+  outline: none;
+  color: #333;
+
+  background: linear-gradient(135deg, #ffffff, #fff0f6);
+  box-shadow: 0 4px 12px rgba(255, 65, 108, 0.15);
+
+  transition: all 0.3s ease;
+}
+
+/* Placeholder */
+.container input::placeholder {
+  color: #c27ba0;
+}
+
+/* Focus */
+.container input:focus {
+  border-color: #ff416c;
+  background: #fff;
+
+  box-shadow:
+    0 0 0 3px rgba(255, 65, 108, 0.25),
+    0 8px 20px rgba(178, 69, 146, 0.35);
+}
+
+/* ===== BUTTON ===== */
+.container button {
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: linear-gradient(
+    135deg,
+    #ff4b2b,
+    #ff416c,
+    #b24592
+  );
+
+  font-size: 17px;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 30px rgba(255, 65, 108, 0.6),
+    0 0 25px rgba(178, 69, 146, 0.4);
+
+  transition: all 0.35s ease;
+}
+
+/* Hover */
+.container button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 18px 40px rgba(178, 69, 146, 0.9);
+}
+
+/* ===== ERROR MESSAGE ===== */
+.error {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff416c;
+}
